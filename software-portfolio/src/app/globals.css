@@ -21,9 +21,15 @@
   --color-secondary: #6884E9;
   --color-tertiary: #1B2836;
   --color-quaternary: #FFFFFF;
+
+  /* Padding */
+  --spacing-button: 0.5em;
+  --spacing-lg-button-horizontal: 2em;
+  --spacing-lg-button-vertical: 0.5em;
 }
 
 body {
   margin: 0;
   padding: 0;
+  color: white;
 }
