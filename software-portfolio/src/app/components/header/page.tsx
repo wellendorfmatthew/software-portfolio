@@ -12,7 +12,7 @@ export default function Header() {
             <Link href={"/"} className="font-main text-quaternary text-medium font-semibold">Projects</Link>
         </div>
       </div>
-      <hr className="w-full bg-quaternary h-0.5" />
+      <hr className="w-full h-0.5" />
     </div>
   );
 }

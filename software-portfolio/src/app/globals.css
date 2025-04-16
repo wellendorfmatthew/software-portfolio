@@ -28,6 +28,13 @@
   --spacing-lg-button-vertical: 0.5em;
 }
 
+html {
+  background: var(--color-primary);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
