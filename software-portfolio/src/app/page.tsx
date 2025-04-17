@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "./components/header/page";
 import Home from "./components/home/page";
 import AboutMe from "./components/about-me/page";
+import Skills from "./components/skills/page";
 
 export default function Root() {
   return (
@@ -9,6 +10,7 @@ export default function Root() {
       <Header />
       <Home />
       <AboutMe />
+      <Skills />
     </div>
   );
 }
