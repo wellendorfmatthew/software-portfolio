@@ -17,11 +17,14 @@
   --color-secondary: #6884E9;
   --color-tertiary: #1B2836;
   --color-quaternary: #FFFFFF;
+  --color-quinary: #000000;
 
   /* Padding */
   --spacing-button: 0.5em;
   --spacing-lg-button-horizontal: 2em;
   --spacing-lg-button-vertical: 0.5em;
+  --spacing-names-vertical: 1em;
+  --spacing-names-horizontal: 2.5em;
 }
 
 html {
