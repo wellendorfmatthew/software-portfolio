@@ -5,10 +5,6 @@
 }
 
 @theme {
-  /* Font Families */
-  --font-main: var(--font-noto-sans);
-  --font-secondary: var(--font-roboto);
-
   /* Font Sizes */
   --text-extraLarge: 3em; 
   --text-large: 2em;
@@ -39,4 +35,12 @@ body {
   margin: 0;
   padding: 0;
   color: white;
+  font-family: var(--font-roboto);
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
 }
