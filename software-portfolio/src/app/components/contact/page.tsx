@@ -18,10 +18,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 type ContactData = z.infer<typeof contactSchema>;
 
 export default function Contact() {
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
     const { register, handleSubmit, formState: { errors }, } = useForm<ContactData>({
         resolver: zodResolver(contactSchema),
         defaultValues: {
@@ -51,7 +47,7 @@ export default function Contact() {
                         {...register("firstName")}
                     />
                     {errors?.firstName && (
-                        <p>
+                        <p className="text-error text-small font-(family-name:--font-noto-sans) font-bold">
                             {errors.firstName.message}
                         </p>
                     )}
@@ -65,7 +61,7 @@ export default function Contact() {
                         {...register("lastName")}
                     />
                     {errors?.lastName && (
-                        <p>
+                        <p className="text-error text-small font-(family-name:--font-noto-sans) font-bold">
                             {errors.lastName.message}
                         </p>
                     )}
@@ -80,7 +76,7 @@ export default function Contact() {
                     {...register("email")}
                 />
                 {errors?.email && (
-                    <p>
+                    <p className="text-error text-small font-(family-name:--font-noto-sans) font-bold">
                         {errors.email.message}
                     </p>
                 )}
@@ -94,12 +90,12 @@ export default function Contact() {
                     {...register("message")}
                 />
                 {errors?.message && (
-                    <p>
+                    <p className="text-error text-small font-(family-name:--font-noto-sans) font-bold">
                         {errors.message.message}
                     </p>
                 )}
             </div>
-            <button className="text-quaternary bg-secondary rounded-3xl px-lg-button-horizontal py-lg-button-vertical">Send Message</button>
+            <button className="text-quaternary bg-secondary rounded-3xl px-lg-button-horizontal py-lg-button-vertical cursor-pointer" type="submit">Send Message</button>
         </form>
     </div>
   );

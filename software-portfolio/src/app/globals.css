@@ -18,6 +18,7 @@
   --color-tertiary: #1B2836;
   --color-quaternary: #FFFFFF;
   --color-quinary: #000000;
+  --color-error: #F37272;
 
   /* Padding */
   --spacing-button: 0.5em;
